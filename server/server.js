@@ -1,9 +1,8 @@
 var express = require('express');
 var app = express();
+var morgan = require('morgan');
 
+app.use(morgan('dev'));
 app.use(express.static('client'));
 
-var port = process.ENV || 3000;
-app.listen(port, function() {
-  console.log("listening on http://localhost:" + port)
-});
+module.exports = app;

@@ -86,6 +86,10 @@ body {
               0 1px 4px rgba(0, 0, 0, 0.60);
 }
 
+#bottom {
+  bottom: 30px;
+}
+
 /* projects */
 #up {
   margin-top: -35px;
@@ -151,20 +155,20 @@ li {
 
 .firstColor {
   background-color: #57605D;
-  -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  -o-transition: all 1.5s ease;
-  -ms-transition: all 1.5s ease;
-  transition: all 1.5s ease;
+  -webkit-transition: all 2.5s ease;
+  -moz-transition: all 2.5s ease;
+  -o-transition: all 2.5s ease;
+  -ms-transition: all 2.5s ease;
+  transition: all 2.5s ease;
 }
 
 .secondColor {
-  background-color: #523851;
-  -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  -o-transition: all 1.5s ease;
-  -ms-transition: all 1.5s ease;
-  transition: all 1.5s ease;
+  background-color: #0f2d36;
+  -webkit-transition: all 2.5s ease;
+  -moz-transition: all 2.5s ease;
+  -o-transition: all 2.5s ease;
+  -ms-transition: all 2.5s ease;
+  transition: all 2.5s ease;
 }
 
 /* paper overlay */

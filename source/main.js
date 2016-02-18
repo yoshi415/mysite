@@ -32,7 +32,7 @@ $(() => {
   toggleOverlay('#djcity', '#project3');
   toggleOverlay('#stock', '#project4');
 
-  let throttledResize = (function throttledResize() {
+  const throttledResize = (function throttledResize() {
     var last, deferTimer, threshhold = 75;
     return function() {
       var now = +(new Date());
@@ -55,9 +55,11 @@ $(() => {
   function responsiveResize() {
     var width = $(document).width();
     if (width < 700) {
-      $(".column").css({ display: 'block', 'margin': 'auto' });
+      $('.column').css({ display: 'block' });
+      $('.projectOverlay').css({ 'margin-left': '98px' });
     } else {
-      $(".column").css({ display: 'inline-flex', 'margin': 'auto' });
+      $('.column').css({ display: 'inline-flex' });
+      $('.projectOverlay').css({ 'margin-left': '22px' });
     }
   }
 

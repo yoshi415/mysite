@@ -122,32 +122,8 @@ body {
   color: white;
 }
 
-/*#paperProjects {
-  height: 649px;
-  width: 1050px;
-  margin-top: -10px;
-}*/
-
 #projectContainer {
   /*text-align: center;*/
-}
-
-.projectBox,
-.projectOverlay {
-  /*margin: 35px;*/
-}
-.projectOverlay {
-  width: 417px;
-  height: 248px;
-  margin: auto;
-  padding: 5px 20px;
-}
-
-.projectBox {
-  width: 458px;
-  height: 258px;
-  margin: 15px auto;
-  padding: 5px 20px;
 }
 
 .column {
@@ -159,12 +135,28 @@ body {
   border: solid black 2px;
 }
 
+.projectBox,
 .projectOverlay {
+  /*margin: 35px;*/
+  width: 458px;
+  height: 258px;
+}
+
+.projectBox {
+  margin: 15px auto;
+  padding: 5px 20px;
+}
+
+.projectOverlay {
+/*  width: 417px;
+  height: 248px;*/
   display: none;
   background-color: white;
   position: absolute;
   z-index: 20;
   opacity: 0.8;
+  /*padding: 5px 20px;*/
+  margin: -276px auto auto 22px;
 }
 
 li {
@@ -181,7 +173,7 @@ li {
 #project2,
 #project3,
 #project4 {
-  margin: -276px auto auto 23px;
+  /*margin: -276px auto auto 94px;*/
 }
 
 

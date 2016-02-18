@@ -11,6 +11,8 @@ $(() => {
         animationTime: 1000,
         beforeMove: (index) => {
             transition(index);
+            $('#down').rotate({ angle: 0, animateTo: 360, duration: 1000})
+            $('#up').rotate({ angle: 0, animateTo: 360, duration: 1000})
         },
         pagination: true,
         loop: false,
@@ -29,7 +31,38 @@ $(() => {
     toggleOverlay('#omnibooks', '#project2');
     toggleOverlay('#djcity', '#project3');
     toggleOverlay('#stock', '#project4');
-   
+
+    function toggleOverlayOnResize() {
+      var width = $(document).width();
+      if (width < 1000) {
+        $(".column").css({ display: 'block', 'margin-left': '25%' });
+        console.log(width);
+      } else {
+        console.log('boom', width)
+        $(".column").css({ display: 'inline-flex', 'margin-left': 'auto' });
+        // createOverlay(options);
+      }
+    }
+
+    let throttledResize = (function throttledResize() {
+      var last, deferTimer, threshhold = 75;
+      return function () {
+        var now = +(new Date());
+        if (last && now < last + threshhold) {
+          clearTimeout(deferTimer);
+          deferTimer = setTimeout(function () {
+            last = now;
+            toggleOverlayOnResize();
+          }, threshhold);
+        } else {
+          last = now;
+          toggleOverlayOnResize();
+        }
+      };
+    })();
+
+    
+  $(window).resize(throttledResize);
 
     function toggleOverlay(project, overlay) {
       $(project).mouseenter(() => {

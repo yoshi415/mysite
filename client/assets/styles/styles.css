@@ -2,10 +2,10 @@
 
 /* general */
 body {
-  background: #57605D;
-  background-image: url('../images/background.png');
+  background: #1d3d24;
   font-family: Roboto;
   font-weight: 300;
+  background-image: url('../images/purty-wood.png');
 }
 
 .center {
@@ -63,11 +63,13 @@ body {
 }
 
 #downLabel {
-  font-size: 25px;
+  font-size: 30px;
+  color: white;
+  margin-top: 7.7%
 }
 
 #down {
-  margin-bottom: -170px;
+  margin-bottom: -5%;
 }
 
 #paperMain {
@@ -92,7 +94,7 @@ body {
 
 /* projects */
 #up {
-  margin-top: -35px;
+  /*margin-top: -35px;*/
 }
 
 #uparrow {
@@ -102,6 +104,7 @@ body {
 #projectLabel {
   margin-top: -1%;
   font-size: 30px;
+  color: white;
 }
 
 #paperProjects {
@@ -121,7 +124,7 @@ body {
 }
 
 .column {
-  display: inline-block;
+  display: inline-flex;
   margin-top: -1.3%;
 }
 
@@ -154,7 +157,7 @@ li {
 /* transition */
 
 .firstColor {
-  background-color: #57605D;
+  background-color: #1d3d24;
   -webkit-transition: all 2.5s ease;
   -moz-transition: all 2.5s ease;
   -o-transition: all 2.5s ease;
@@ -163,7 +166,7 @@ li {
 }
 
 .secondColor {
-  background-color: #0f2d36;
+  background-color: #0a0b24;
   -webkit-transition: all 2.5s ease;
   -moz-transition: all 2.5s ease;
   -o-transition: all 2.5s ease;

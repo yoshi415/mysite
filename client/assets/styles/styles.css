@@ -122,21 +122,32 @@ body {
   color: white;
 }
 
-#paperProjects {
+/*#paperProjects {
   height: 649px;
   width: 1050px;
   margin-top: -10px;
-}
+}*/
 
 #projectContainer {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .projectBox,
 .projectOverlay {
+  /*margin: 35px;*/
+}
+.projectOverlay {
+  width: 417px;
+  height: 248px;
+  margin: auto;
+  padding: 5px 20px;
+}
+
+.projectBox {
   width: 458px;
   height: 258px;
-  margin: 35px;
+  margin: 15px auto;
+  padding: 5px 20px;
 }
 
 .column {
@@ -170,7 +181,7 @@ li {
 #project2,
 #project3,
 #project4 {
-  margin: -291px auto auto 37px;
+  margin: -276px auto auto 23px;
 }
 
 

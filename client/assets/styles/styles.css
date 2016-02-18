@@ -96,13 +96,13 @@ body {
 }
 
 #projectLabel {
-  margin-top: 100px;
+  margin-top: -1%;
   font-size: 30px;
 }
 
 #paperProjects {
-  height: 649px;
-  width: 1050px;
+  height: 77%;
+  width: 70%;
   margin-top: -10px;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .column {
   display: inline-block;
-  margin-top: 35px;
+  margin-top: 1.05%;
 }
 
 .projectImg {
@@ -173,7 +173,7 @@ li {
   border-radius: 5px;
   position: relative;
   background-color: white;
-  margin: 50px auto;
+  margin: 3% auto;
   -webkit-transform: 0.5s ease-in-out;
   -ms-transform: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;

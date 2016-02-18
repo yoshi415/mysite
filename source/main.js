@@ -54,8 +54,8 @@ $(() => {
 
   function responsiveResize() {
     var width = $(document).width();
-    if (width < 1000) {
-      $(".column").css({ display: 'block', 'margin-left': '25%' });
+    if (width < 700) {
+      $(".column").css({ display: 'block', 'margin-left': '5%' });
     } else {
       $(".column").css({ display: 'inline-flex', 'margin-left': 'auto' });
     }

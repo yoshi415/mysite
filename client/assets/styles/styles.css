@@ -74,11 +74,11 @@ body {
 #downLabel {
   font-size: 30px;
   color: white;
-  margin-top: 7.7%
+  /*margin-top: 7.7%  */
 }
 
 #down {
-  margin-bottom: -5%;
+  margin-bottom: -2.5%;
 }
 
 #paperMain {
@@ -94,9 +94,15 @@ body {
   opacity: .6;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.48), 0 1px 4px rgba(0, 0, 0, 0.60);
 }
+#wrapper {
+  min-height: 75%;
+  height: auto !important;
+  height: 75%;
+  /*margin: 0 auto -100px;*/
+}
 
 #bottom {
-  bottom: 30px;
+  height: 10%;
 }
 
 
@@ -130,7 +136,7 @@ body {
 .projectOverlay {
   width: 458px;
   height: 258px;
-  margin: 20px 10px;
+  margin: 35px;
 }
 
 .column {
@@ -164,7 +170,7 @@ li {
 #project2,
 #project3,
 #project4 {
-  margin: -276px auto auto 12px;
+  margin: -291px auto auto 37px;
 }
 
 

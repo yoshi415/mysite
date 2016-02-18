@@ -8,11 +8,6 @@ body {
   font-weight: 300;
 }
 
-li {
-  list-style-type: none;
-  display: inline;
-}
-
 .center {
   text-align: center
 }
@@ -115,11 +110,10 @@ li {
   text-align: center;
 }
 
-.projectBox {
+.projectBox, .projectOverlay {
   width: 458px;
   height: 258px;
   margin: 20px 10px;
-  background-color: black;
 }
 
 .column {
@@ -131,24 +125,46 @@ li {
   border: solid black 2px;
 }
 
-/* transition */
-
-.firstColor{
-background-color: #57605D;
--webkit-transition: all 1.5s ease;
--moz-transition: all 1.5s ease;
--o-transition: all 1.5s ease;
--ms-transition: all 1.5s ease;
-transition: all 1.5s ease;
+.projectOverlay {
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 20;
+  opacity: 0.8;
 }
 
-.secondColor{
-background-color: #523851;
--webkit-transition: all 1.5s ease;
--moz-transition: all 1.5s ease;
--o-transition: all 1.5s ease;
--ms-transition: all 1.5s ease;
-transition: all 1.5s ease;
+li {
+  list-style-type: none;
+}
+
+.projectLink {
+  color: black;
+  margin-left: -45px;
+  font-size: 30px;
+}
+
+#project1, #project2, #project3, #project4 {
+  margin: -276px auto auto 12px;
+}
+
+/* transition */
+
+.firstColor {
+  background-color: #57605D;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.secondColor {
+  background-color: #523851;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 /* paper overlay */

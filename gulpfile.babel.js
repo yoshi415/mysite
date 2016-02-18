@@ -17,7 +17,7 @@ function compile(watch) {
     bundler.bundle()
       .on('error', (err) => {
         console.error(err);
-        this.emit('end');
+        // this.emit('end');
       })
       .pipe(source('build.js'))
       .pipe(buffer())

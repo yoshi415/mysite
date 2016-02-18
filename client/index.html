@@ -15,7 +15,7 @@
 <body>
   <div class='main'>
     <section id='home'>
-      <div class='paper overlay'>
+      <div class='paper overlay' id='paperMain'>
         <div class='info'>
 
           <div id='name'>
@@ -43,20 +43,38 @@
         </div>
       </div>
 
-      <div class='center'>
-        <div id='downLabel'>Projects</div>
+      <div id='bottom' class='center'>
+        <div id='downLabel' class='label'>Projects</div>
         <div>
-          <img src='assets/images/downarrow.png' id='down' class='center' />
+          <img src='assets/images/downarrow.png' id='down' />
         </div>  
       </div>
     </section>
 
-    <section id='projects'>
-      <div class='center'>
-        <img src='assets/images/uparrow.png' id='up' class='center' />
+    <section id='projects' class='center'>
+      <div id='uparrow'>
+        <img src='assets/images/uparrow.png' id='up' />
       </div>
-      <div class=paper overlay>
-        <h1>My Projects</h1>
+      <p id='projectLabel'>My Projects</p>
+      <div class='paper overlay' id='paperProjects'>
+        <div id='projectContainer'>
+          <div class='column'>
+            <div class='projectBox'>
+              <img src='assets/images/goodinthisworld.png' id='goodinthisworld' class='projectImg' />
+            </div>
+            <div class='projectBox'>
+              <img src='assets/images/goodinthisworld.png' id='' class='projectImg' />
+            </div>
+          </div>
+          <div class='column'>
+            <div class='projectBox'>
+              <img src='assets/images/omnibooks.png' id='' class='projectImg' />
+            </div>
+            <div class='projectBox'>
+              <img src='assets/images/goodinthisworld.png' class='projectImg' />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

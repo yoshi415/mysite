@@ -20,28 +20,15 @@ li {
 /* shared */
 #home, #projects {
   height: 100vh;
+  overflow: hidden;
 }
 
 #up, #down, #downLabel {
   cursor: pointer;
 }
 
-.firstColor{
-background-color: #57605D;
--webkit-transition: all 1.5s ease;
--moz-transition: all 1.5s ease;
--o-transition: all 1.5s ease;
--ms-transition: all 1.5s ease;
-transition: all 1.5s ease;
-}
-
-.secondColor{
-background-color: #523851;
--webkit-transition: all 1.5s ease;
--moz-transition: all 1.5s ease;
--o-transition: all 1.5s ease;
--ms-transition: all 1.5s ease;
-transition: all 1.5s ease;
+.label {
+  font-size: 40px;
 }
 
 /* main */
@@ -84,14 +71,89 @@ transition: all 1.5s ease;
   font-size: 25px;
 }
 
-/* projects */
+#down {
+  margin-bottom: -170px;
+}
 
+#paperMain {
+  height: 500px;
+  width: 500px;
+  opacity: 0.4;
+
+}
+
+#paperMain:hover {
+  -webkit-transform: 0.5s ease-in-out;
+  -ms-transform: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: .6;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.48),
+              0 1px 4px rgba(0, 0, 0, 0.60);
+}
+
+/* projects */
+#up {
+  margin-top: -35px;
+}
+
+#uparrow {
+  height: 97px;
+}
+
+#projectLabel {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+#paperProjects {
+  height: 649px;
+  width: 1050px;
+  margin-top: -10px;
+}
+
+#projectContainer {
+  text-align: center;
+}
+
+.projectBox {
+  width: 458px;
+  height: 258px;
+  margin: 20px 10px;
+  background-color: black;
+}
+
+.column {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.projectImg {
+  border: solid black 2px;
+}
+
+/* transition */
+
+.firstColor{
+background-color: #57605D;
+-webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+transition: all 1.5s ease;
+}
+
+.secondColor{
+background-color: #523851;
+-webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+transition: all 1.5s ease;
+}
 
 /* paper overlay */
 
 .paper {
-  height: 500px;
-  width: 500px;
   border-radius: 5px;
   position: relative;
   background-color: white;
@@ -99,18 +161,8 @@ transition: all 1.5s ease;
   -webkit-transform: 0.5s ease-in-out;
   -ms-transform: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  opacity: 0.4;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12),
               0 1px 4px rgba(0, 0, 0, 0.24);
-}
-
-.paper:hover {
-  -webkit-transform: 0.5s ease-in-out;
-  -ms-transform: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  opacity: .6;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.48),
-              0 1px 4px rgba(0, 0, 0, 0.60);
 }
 
 .overlay:after,

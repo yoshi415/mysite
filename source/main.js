@@ -1,31 +1,36 @@
 $(() => {
   const $main = $('.main');
   const $body = $('body');
-  let direction = false;
+  const $up = $('#up');
+  const $down = $('#down');
+  const $downLabel = $('#downLabel');
 
   $main.onepage_scroll({
         easing: 'ease-in-out',
         animationTime: 1000,
-        // beforeMove: changeColor,
-        afterMove: changeColor,
+        beforeMove: (index) => {
+          transition(index);
+        },
         pagination: true,
         loop: false,
         keyboard: true,
         responsiveFallback: 600
   });
 
-  $('#up').click(() => {
+  $up.click(() => {
       $main.moveUp();
   });
-  $('#down').click(() => {
+  $down.add('#downLabel').click(() => {
       $main.moveDown();
   });
 
-  function changeColor() {
-    direction = !direction;
-    let colors = direction ? ['firstColor', 'secondColor'] : [ 'secondColor', 'firstColor' ];
-    $body.removeClass(colors[0]).addClass(colors[1]);
+
+  function transition(page) {
+    let direction = page === 1;
+    let colors = direction ? ['firstColor', 'secondColor'] : [ 'secondColor', 'firstColor'];
+    let toggleArrow = direction ? ['show', 'hide'] : ['hide', 'show']
+    $body.removeClass(colors[1]).addClass(colors[0]);
+    $down[toggleArrow[0]](1200);
+    $up[toggleArrow[1]](1200);
   }
-
-
 });

@@ -21,7 +21,7 @@ function compile(watch) {
       })
       .pipe(source('build.js'))
       .pipe(buffer())
-      .pipe(gulp.dest('./client/js'))
+      .pipe(gulp.dest('./client/js'));
   }
 
   if (watch) {
